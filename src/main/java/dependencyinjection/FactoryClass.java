@@ -7,8 +7,8 @@ public class FactoryClass {
 
     public static void main(String[] args) {
 
-        Triangle triangle = new Triangle();
         Draw draw = new Draw();
+        Triangle triangle = new Triangle();
         draw.setShape(triangle);
         draw.drawShape();
     }
