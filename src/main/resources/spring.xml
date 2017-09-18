@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+    <bean id="triangle" class="dependencyinjection.Triangle">
+        <!-- <property name="type" value="New type" /> -->
+        <constructor-arg value="New new type" />
+        <constructor-arg value="99" />
+    </bean>
+    <bean id="square" class="dependencyinjection.Square" />
+</beans>
