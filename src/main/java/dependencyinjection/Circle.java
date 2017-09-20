@@ -23,4 +23,12 @@ public class Circle {
     public void setRadius(Double radius) {
         this.radius = radius;
     }
+
+    public Double area(){
+
+        return Math.PI*radius*radius;
+    }
+
 }
+
+

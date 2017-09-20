@@ -1,6 +1,6 @@
 INTRODUCTION
 
-This is a json project for doing all the json things here.
+This is a spring project for doing all the spring things here.
 
 PROFILE
 
