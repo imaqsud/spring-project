@@ -1,5 +1,7 @@
 package dependencyinjection;
 
+import java.util.List;
+
 /**
  * Created by maiq on 19/09/17.
  */
@@ -8,6 +10,16 @@ public class Triangle implements Shape{
     private Point pointA;
     private Point pointB;
     private Point pointC;
+
+    private List<Point> points;
+
+    public List<Point> getPoints() {
+        return points;
+    }
+
+    public void setPoints(List<Point> points) {
+        this.points = points;
+    }
 
     private String type;
     private int rollNo;
@@ -71,5 +83,12 @@ public class Triangle implements Shape{
         System.out.println("(" + getPointA().getX() + ", " + getPointA().getY() + ")");
         System.out.println("(" + getPointB().getX() + ", " + getPointB().getY() + ")");
         System.out.println("(" + getPointC().getX() + ", " + getPointC().getY() + ")");
+    }
+
+    public void printPointList(){
+
+        for (Point point : points) {
+            System.out.println("(" + point.getX() + ", " + point.getY() + ")");
+        }
     }
 }

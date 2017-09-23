@@ -31,5 +31,7 @@ public class ApplicationContextClass {
         System.out.println(square.getName());
 
         square.draw();
+
+        triangle.printPointList();
     }
 }
