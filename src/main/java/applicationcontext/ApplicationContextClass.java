@@ -1,5 +1,6 @@
 package applicationcontext;
 
+import dependencyinjection.Point;
 import dependencyinjection.Square;
 import dependencyinjection.Triangle;
 import org.springframework.beans.BeansException;
@@ -22,6 +23,8 @@ public class ApplicationContextClass {
         triangle.draw();
         System.out.println(triangle.getType());
         System.out.println(triangle.getRollNo());
+
+        triangle.printPoints();
 
         Square square = (Square) applicationContex.getBean("square");
         System.out.println(square.getRollNo());
