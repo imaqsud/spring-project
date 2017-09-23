@@ -13,7 +13,7 @@ public class BeanFactoryClass {
 
     public static void main(String[] args) {
 
-        BeanFactory beanFactory = new XmlBeanFactory(new FileSystemResource("spring.xml"));
+        BeanFactory beanFactory = new XmlBeanFactory(new FileSystemResource("src/main/resources/spring.xml"));
         Triangle triangle = (Triangle) beanFactory.getBean("triangle");
         triangle.draw();
 

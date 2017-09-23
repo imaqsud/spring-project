@@ -3,9 +3,12 @@
 
 <beans>
     <bean id="triangle" class="dependencyinjection.Triangle">
-        <!-- <property name="type" value="New type" /> -->
+        <property name="type" value="New type" />
         <constructor-arg value="New new type" />
         <constructor-arg value="99" />
     </bean>
-    <bean id="square" class="dependencyinjection.Square" />
+    <bean id="square" class="dependencyinjection.Square">
+        <constructor-arg index="0" value="13576" />
+        <constructor-arg index="1" value="Mohammad"/>
+    </bean>
 </beans>
